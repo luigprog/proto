@@ -222,13 +222,13 @@ public class App extends javax.swing.JFrame {
 
             jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
             jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel4.setText("POINTS:");
-            panelMenuPrincipal.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, -1, -1));
+            jLabel4.setText("TOTAL SCORE:");
+            panelMenuPrincipal.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 540, -1, -1));
 
             labelPoints_MenuPrincipal.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
             labelPoints_MenuPrincipal.setForeground(new java.awt.Color(255, 255, 255));
-            labelPoints_MenuPrincipal.setText("xxx");
-            panelMenuPrincipal.add(labelPoints_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 530, 90, -1));
+            labelPoints_MenuPrincipal.setText("54776");
+            panelMenuPrincipal.add(labelPoints_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 540, 90, -1));
 
             buttonHistoria_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/buttonHistoria_MenuPrincipal.png"))); // NOI18N
             buttonHistoria_MenuPrincipal.setContentAreaFilled(false);
@@ -304,8 +304,8 @@ public class App extends javax.swing.JFrame {
 
             jLabel2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
             jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel2.setText("POINTS:");
-            panelMenuFases.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 520, -1, -1));
+            jLabel2.setText("TOTAL SCORE:");
+            panelMenuFases.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 520, -1, -1));
 
             panelListaFases.setBackground(new java.awt.Color(32, 30, 30));
             panelListaFases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -328,12 +328,12 @@ public class App extends javax.swing.JFrame {
             labelPoints_MenuFases.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
             labelPoints_MenuFases.setForeground(new java.awt.Color(255, 255, 255));
             labelPoints_MenuFases.setText("xxxx");
-            panelMenuFases.add(labelPoints_MenuFases, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 520, 180, -1));
+            panelMenuFases.add(labelPoints_MenuFases, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 520, 180, -1));
 
             jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
             jLabel1.setForeground(new java.awt.Color(255, 255, 255));
             jLabel1.setText("SELECT THE LEVEL:");
-            panelMenuFases.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
+            panelMenuFases.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, -1, -1));
 
             bg_MenuFases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/bg_MenuFases.png"))); // NOI18N
             bg_MenuFases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -573,7 +573,7 @@ public class App extends javax.swing.JFrame {
 
             jLabel9.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
             jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel9.setText("HISTÓRIA");
+            jLabel9.setText("HISTORY");
 
             javax.swing.GroupLayout panelHistoriaLayout = new javax.swing.GroupLayout(panelHistoria);
             panelHistoria.setLayout(panelHistoriaLayout);
@@ -630,7 +630,7 @@ public class App extends javax.swing.JFrame {
 
             jLabel11.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
             jLabel11.setForeground(new java.awt.Color(102, 102, 102));
-            jLabel11.setText("CRÉDITOS");
+            jLabel11.setText("CREDITS");
 
             jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/creditos.png"))); // NOI18N
 
@@ -647,11 +647,11 @@ public class App extends javax.swing.JFrame {
                             .addGap(115, 115, 115)
                             .addComponent(jLabel10))
                         .addGroup(panelCreditosLayout.createSequentialGroup()
-                            .addGap(394, 394, 394)
-                            .addComponent(jLabel11))
-                        .addGroup(panelCreditosLayout.createSequentialGroup()
                             .addGap(374, 374, 374)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(panelCreditosLayout.createSequentialGroup()
+                            .addGap(407, 407, 407)
+                            .addComponent(jLabel11)))
                     .addContainerGap(140, Short.MAX_VALUE))
             );
             panelCreditosLayout.setVerticalGroup(
@@ -882,7 +882,7 @@ public class App extends javax.swing.JFrame {
         if (mensagem.equals("")) {
             game.Main.main(null);
         } else {
-            new MessagePopup("Seu código possui algum erro. Mensagem do compilador:", mensagem, MessagePopup.ERRO_CODIGO).setVisible(true);
+            new MessagePopup("There is error in your code. Compiler message:", mensagem, MessagePopup.ERRO_CODIGO).setVisible(true);
         }
     }//GEN-LAST:event_buttonExecutar_FaseActionPerformed
 

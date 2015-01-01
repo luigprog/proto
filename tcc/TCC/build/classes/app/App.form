@@ -109,11 +109,11 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="POINTS:"/>
+                <Property name="text" type="java.lang.String" value="TOTAL SCORE:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="720" y="530" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="720" y="540" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -125,11 +125,11 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="xxx"/>
+                <Property name="text" type="java.lang.String" value="54776"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="800" y="530" width="90" height="-1"/>
+                  <AbsoluteConstraints x="840" y="540" width="90" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -240,11 +240,11 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="POINTS:"/>
+                <Property name="text" type="java.lang.String" value="TOTAL SCORE:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="670" y="520" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="650" y="520" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -294,7 +294,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="770" y="520" width="180" height="-1"/>
+                  <AbsoluteConstraints x="800" y="520" width="180" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -310,7 +310,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="310" y="10" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="350" y="10" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -788,7 +788,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="HIST&#xd3;RIA"/>
+                <Property name="text" type="java.lang.String" value="HISTORY"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -819,12 +819,12 @@
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
-                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="374" max="-2" attributes="0"/>
                               <Component id="jSeparator1" min="-2" pref="178" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="407" max="-2" attributes="0"/>
+                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="140" max="32767" attributes="0"/>
@@ -873,7 +873,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="CR&#xc9;DITOS"/>
+                <Property name="text" type="java.lang.String" value="CREDITS"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">

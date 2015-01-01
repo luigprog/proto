@@ -21,7 +21,7 @@ public class MessagePopup extends javax.swing.JFrame {
         
         if(this.type == ERRO_CODIGO){
         
-            setTitle("Erro no código");
+            setTitle("Code error");
             
         } else if (this.type == CHEAT){
             

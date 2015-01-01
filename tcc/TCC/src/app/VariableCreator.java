@@ -44,7 +44,7 @@ public class VariableCreator extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Criação de Variável");
+        setTitle("Variable Creator");
         setBackground(new java.awt.Color(32, 30, 30));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -56,7 +56,7 @@ public class VariableCreator extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Tipo:");
+        jLabel1.setText("Type:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 69, -1));
 
         cboxTipo.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
@@ -70,7 +70,7 @@ public class VariableCreator extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Nome:");
+        jLabel2.setText("Name:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         textNome.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
@@ -78,7 +78,7 @@ public class VariableCreator extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Valor Inicial:");
+        jLabel4.setText("Initial Value:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
         panelBase.setBackground(new java.awt.Color(32, 30, 30));
@@ -146,23 +146,23 @@ public class VariableCreator extends javax.swing.JFrame {
 
         buttonAdicionar.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
         buttonAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/addIcon.png"))); // NOI18N
-        buttonAdicionar.setText("Adicionar");
+        buttonAdicionar.setText("Add");
         buttonAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonAdicionarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonAdicionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+        getContentPane().add(buttonAdicionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 120, -1));
 
         buttonCancelar.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
         buttonCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/cancelIcon.png"))); // NOI18N
-        buttonCancelar.setText("Cancelar");
+        buttonCancelar.setText("Cancel");
         buttonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonCancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
+        getContentPane().add(buttonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 110, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/bg_Solid.png"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 210));
@@ -219,7 +219,7 @@ public class VariableCreator extends javax.swing.JFrame {
 
             this.dispose();
         } else {
-            labelMensagem.setText("*Preencha todos os campos.");
+            labelMensagem.setText("*Fill all the fields.");
         }
     }//GEN-LAST:event_buttonAdicionarActionPerformed
 
