@@ -79,19 +79,15 @@ public class App extends javax.swing.JFrame {
         buttonSair_MenuPrincipal = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         labelPoints_MenuPrincipal = new javax.swing.JLabel();
-        labelLevel_MenuPrincipal = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         buttonHistoria_MenuPrincipal = new javax.swing.JButton();
         buttonCreditos_MenuPrincipal = new javax.swing.JButton();
         bg_MenuPrincipal = new javax.swing.JLabel();
         panelMenuFases = new javax.swing.JPanel();
         buttonVoltar_MenuFases = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         scrollPaneListaFases = new javax.swing.JScrollPane();
         panelListaFases = new javax.swing.JPanel();
         labelPoints_MenuFases = new javax.swing.JLabel();
-        labelLevel_MenuFases = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         bg_MenuFases = new javax.swing.JLabel();
         panelFase = new javax.swing.JPanel();
@@ -226,23 +222,13 @@ public class App extends javax.swing.JFrame {
 
             jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
             jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel4.setText("PONTOS:");
+            jLabel4.setText("POINTS:");
             panelMenuPrincipal.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, -1, -1));
 
             labelPoints_MenuPrincipal.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
             labelPoints_MenuPrincipal.setForeground(new java.awt.Color(255, 255, 255));
             labelPoints_MenuPrincipal.setText("xxx");
             panelMenuPrincipal.add(labelPoints_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 530, 90, -1));
-
-            labelLevel_MenuPrincipal.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-            labelLevel_MenuPrincipal.setForeground(new java.awt.Color(255, 255, 255));
-            labelLevel_MenuPrincipal.setText("xxx");
-            panelMenuPrincipal.add(labelLevel_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 550, 110, -1));
-
-            jLabel5.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-            jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel5.setText("NÍVEL:");
-            panelMenuPrincipal.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 550, -1, -1));
 
             buttonHistoria_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/buttonHistoria_MenuPrincipal.png"))); // NOI18N
             buttonHistoria_MenuPrincipal.setContentAreaFilled(false);
@@ -318,13 +304,8 @@ public class App extends javax.swing.JFrame {
 
             jLabel2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
             jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel2.setText("PONTOS:");
-            panelMenuFases.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 500, -1, -1));
-
-            jLabel3.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-            jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel3.setText("NÍVEL:");
-            panelMenuFases.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 530, -1, -1));
+            jLabel2.setText("POINTS:");
+            panelMenuFases.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 520, -1, -1));
 
             panelListaFases.setBackground(new java.awt.Color(32, 30, 30));
             panelListaFases.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -347,16 +328,11 @@ public class App extends javax.swing.JFrame {
             labelPoints_MenuFases.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
             labelPoints_MenuFases.setForeground(new java.awt.Color(255, 255, 255));
             labelPoints_MenuFases.setText("xxxx");
-            panelMenuFases.add(labelPoints_MenuFases, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 500, 180, -1));
-
-            labelLevel_MenuFases.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-            labelLevel_MenuFases.setForeground(new java.awt.Color(255, 255, 255));
-            labelLevel_MenuFases.setText("xxxxx");
-            panelMenuFases.add(labelLevel_MenuFases, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 530, 190, -1));
+            panelMenuFases.add(labelPoints_MenuFases, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 520, 180, -1));
 
             jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
             jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-            jLabel1.setText("SELECIONE UMA FASE:");
+            jLabel1.setText("SELECT THE LEVEL:");
             panelMenuFases.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
 
             bg_MenuFases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/bg_MenuFases.png"))); // NOI18N
@@ -367,12 +343,12 @@ public class App extends javax.swing.JFrame {
 
             panelFase.setBackground(new java.awt.Color(32, 30, 30));
 
-            codeEditor.setText("// Seu código aqui");
+            codeEditor.setText("// Your code here");
             scrollPaneCodeEditor.setViewportView(codeEditor);
 
             buttonVoltar_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonVoltar_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782594_back.png"))); // NOI18N
-            buttonVoltar_Fase.setText("Voltar");
+            buttonVoltar_Fase.setText("Back");
             buttonVoltar_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonVoltar_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -382,7 +358,7 @@ public class App extends javax.swing.JFrame {
 
             buttonMenuPrincipal_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonMenuPrincipal_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782528_519941-001_Home.png"))); // NOI18N
-            buttonMenuPrincipal_Fase.setText("Menu Principal");
+            buttonMenuPrincipal_Fase.setText("Main Menu");
             buttonMenuPrincipal_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonMenuPrincipal_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -403,7 +379,7 @@ public class App extends javax.swing.JFrame {
 
             buttonAdicionarVariavel_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonAdicionarVariavel_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782506_add1-.png"))); // NOI18N
-            buttonAdicionarVariavel_Fase.setText("Adicionar");
+            buttonAdicionarVariavel_Fase.setText("Add");
             buttonAdicionarVariavel_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonAdicionarVariavel_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -417,7 +393,7 @@ public class App extends javax.swing.JFrame {
 
                 },
                 new String [] {
-                    "Tipo", "Nome", "Valor inicial"
+                    "Type", "Name", "Initial value"
                 }
             ) {
                 boolean[] canEdit = new boolean [] {
@@ -429,11 +405,13 @@ public class App extends javax.swing.JFrame {
                 }
             });
             jScrollPane1.setViewportView(tableVariaveis_Fase);
-            tableVariaveis_Fase.getColumnModel().getColumn(0).setResizable(false);
+            if (tableVariaveis_Fase.getColumnModel().getColumnCount() > 0) {
+                tableVariaveis_Fase.getColumnModel().getColumn(0).setResizable(false);
+            }
 
             buttonExcluirVariavel_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonExcluirVariavel_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782513_DeleteRed.png"))); // NOI18N
-            buttonExcluirVariavel_Fase.setText("Excluir");
+            buttonExcluirVariavel_Fase.setText("Delete");
             buttonExcluirVariavel_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonExcluirVariavel_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -443,7 +421,7 @@ public class App extends javax.swing.JFrame {
 
             buttonSalvar_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonSalvar_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782657_floppy_disk_save.png"))); // NOI18N
-            buttonSalvar_Fase.setText("Salvar Código");
+            buttonSalvar_Fase.setText("Save Code");
             buttonSalvar_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonSalvar_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -453,7 +431,7 @@ public class App extends javax.swing.JFrame {
 
             buttonAbrir_Fase.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
             buttonAbrir_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/1382782789_open-file.png"))); // NOI18N
-            buttonAbrir_Fase.setText("Abrir Código...");
+            buttonAbrir_Fase.setText("Open Code File...");
             buttonAbrir_Fase.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             buttonAbrir_Fase.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -474,7 +452,7 @@ public class App extends javax.swing.JFrame {
 
             jLabel7.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
             jLabel7.setForeground(new java.awt.Color(0, 51, 102));
-            jLabel7.setText("Variáveis:");
+            jLabel7.setText("Variables:");
 
             imagemGradeFase_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/data/storage/level/fase1.png"))); // NOI18N
 
@@ -500,14 +478,14 @@ public class App extends javax.swing.JFrame {
                                 .addGroup(panelFaseLayout.createSequentialGroup()
                                     .addComponent(jLabel7)
                                     .addGap(0, 0, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
-                                    .addComponent(buttonVoltar_Fase)
+                                .addGroup(panelFaseLayout.createSequentialGroup()
+                                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(buttonAdicionarVariavel_Fase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(buttonVoltar_Fase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(buttonMenuPrincipal_Fase))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
-                                    .addComponent(buttonAdicionarVariavel_Fase)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(buttonExcluirVariavel_Fase))))
+                                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(buttonExcluirVariavel_Fase, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(buttonMenuPrincipal_Fase, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGroup(panelFaseLayout.createSequentialGroup()
                             .addComponent(imagemGradeFase_Fase)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -522,9 +500,9 @@ public class App extends javax.swing.JFrame {
                         .addComponent(imagemGradeFase_Fase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane2))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelFaseLayout.createSequentialGroup()
+                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -532,23 +510,22 @@ public class App extends javax.swing.JFrame {
                                 .addComponent(buttonExcluirVariavel_Fase)
                                 .addGap(81, 81, 81))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(buttonAdicionarVariavel_Fase)
-                                .addGap(82, 82, 82)))
+                                .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(buttonVoltar_Fase)
+                                        .addComponent(buttonMenuPrincipal_Fase))
+                                    .addGroup(panelFaseLayout.createSequentialGroup()
+                                        .addComponent(scrollPaneCodeEditor, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(buttonAbrir_Fase)
+                                                .addComponent(buttonSalvar_Fase))
+                                            .addComponent(buttonExecutar_Fase, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(16, 16, 16)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
-                            .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(buttonVoltar_Fase)
-                                    .addComponent(buttonMenuPrincipal_Fase))
-                                .addGroup(panelFaseLayout.createSequentialGroup()
-                                    .addComponent(scrollPaneCodeEditor, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(buttonAbrir_Fase)
-                                            .addComponent(buttonSalvar_Fase))
-                                        .addComponent(buttonExecutar_Fase, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGap(16, 16, 16))))
+                            .addComponent(buttonAdicionarVariavel_Fase)
+                            .addGap(82, 82, 82))))
             );
 
             panelBase.add(panelFase, "card4");
@@ -704,8 +681,6 @@ public class App extends javax.swing.JFrame {
                 .addComponent(panelBase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             );
 
-            getAccessibleContext().setAccessibleName("P R O T O - Beta");
-
             pack();
         }// </editor-fold>//GEN-END:initComponents
 
@@ -738,12 +713,12 @@ public class App extends javax.swing.JFrame {
 
     private void refreshPlayerStatsMenuPrincipal() {
         this.labelPoints_MenuPrincipal.setText(playerStats.getProperty("total"));
-        this.labelLevel_MenuPrincipal.setText(playerStats.getProperty("level"));
+        //this.labelLevel_MenuPrincipal.setText(playerStats.getProperty("level"));
     }
 
     private void refreshPlayerStatsMenuFases() {
         this.labelPoints_MenuFases.setText(playerStats.getProperty("total"));
-        this.labelLevel_MenuFases.setText(playerStats.getProperty("level"));
+        //this.labelLevel_MenuFases.setText(playerStats.getProperty("level"));
     }
 
     //================================================================================================ Controle de painéis
@@ -1118,9 +1093,7 @@ public class App extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1128,8 +1101,6 @@ public class App extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel labelLevel_MenuFases;
-    private javax.swing.JLabel labelLevel_MenuPrincipal;
     private javax.swing.JLabel labelPoints_MenuFases;
     private javax.swing.JLabel labelPoints_MenuPrincipal;
     private javax.swing.JTextArea labelText_Fase;
