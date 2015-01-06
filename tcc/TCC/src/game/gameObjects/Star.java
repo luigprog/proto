@@ -1,9 +1,9 @@
 package game.gameObjects;
 
-import gamer.Esfera2;
-import gamer.Esfera3;
-import gamer.EsferaAtual;
-import gamer.Objetivo;
+import gamer.Sphere2;
+import gamer.Sphere3;
+import gamer.CurrentSphere;
+import gamer.Goal;
 import org.newdawn.slick.Animation;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
@@ -74,15 +74,15 @@ public class Star extends GameObject {
                 aux.starsQuant++;
                 // mudar parte gamer--------------------------------------------
                 if(aux.starsQuant == 1){
-                    EsferaAtual.x = Esfera2.x;
-                    EsferaAtual.y = Esfera2.y;
+                    CurrentSphere.x = Sphere2.x;
+                    CurrentSphere.y = Sphere2.y;
                 } else if (aux.starsQuant == 2){
-                    EsferaAtual.x = Esfera3.x;
-                    EsferaAtual.y = Esfera3.y;
+                    CurrentSphere.x = Sphere3.x;
+                    CurrentSphere.y = Sphere3.y;
                 } else if (aux.starsQuant == 3){
                     // caso o player tenha as 3 esferas, entao agora a esfera atual aponta para o Objetivo
-                    EsferaAtual.x = Objetivo.x;
-                    EsferaAtual.y = Objetivo.y;
+                    CurrentSphere.x = Goal.x;
+                    CurrentSphere.y = Goal.y;
                 }
                 //--------------------------------------------------------------
             } 

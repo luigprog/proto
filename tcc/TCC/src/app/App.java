@@ -743,7 +743,7 @@ public class App extends javax.swing.JFrame {
             refreshPlayerStatsMenuFases();
         } else if (x == panelFase) {
             imagemGradeFase_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/data/storage/level/fase" + Universal.currentFaseId + ".png"))); // NOI18N
-            labelText_Fase.setText("Informações: \n" + FasesDados.fase[Universal.currentFaseId].text);
+            labelText_Fase.setText("Notes: \n" + FasesDados.fase[Universal.currentFaseId].text);
         }
     }
     //================================================================================================== Editor de Código
@@ -836,17 +836,17 @@ public class App extends javax.swing.JFrame {
         String mensagem = "";
         try {
             bsh.eval("import gamer.Proto;");
-            bsh.eval("import gamer.Objetivo;");
-            bsh.eval("import gamer.Esfera1;");
-            bsh.eval("import gamer.Esfera2;");
-            bsh.eval("import gamer.Esfera3;");
-            bsh.eval("import gamer.EsferaAtual;");
-            bsh.set("nada", InfoCenter.map_nada);
-            bsh.set("solido", InfoCenter.map_solido);
-            bsh.set("escada", InfoCenter.map_escada);
-            bsh.set("objetivo", InfoCenter.map_objetivo);
-            bsh.set("esfera", InfoCenter.map_esfera);
-            bsh.set("solido_escada", InfoCenter.map_solidoEscada);
+            bsh.eval("import gamer.Goal;");
+            bsh.eval("import gamer.Sphere1;");
+            bsh.eval("import gamer.Sphere2;");
+            bsh.eval("import gamer.Sphere3;");
+            bsh.eval("import gamer.CurrentSphere;");
+            bsh.set("none", InfoCenter.map_nada);
+            bsh.set("solid", InfoCenter.map_solido);
+            bsh.set("stairs", InfoCenter.map_escada);
+            bsh.set("goal", InfoCenter.map_objetivo);
+            bsh.set("sphere", InfoCenter.map_esfera);
+            bsh.set("solid_stairs", InfoCenter.map_solidoEscada);
 
             VariavelTableNode aux;
             for (int i = 0; i < variaveis.size(); i++) {

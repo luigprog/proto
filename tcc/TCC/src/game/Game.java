@@ -11,13 +11,13 @@ import game.gameObjects.GameObject;
 import game.gameObjects.Objective;
 import game.gameObjects.Player;
 import game.gameObjects.Star;
-import gamer.Esfera1;
-import gamer.Esfera2;
-import gamer.Esfera3;
+import gamer.Sphere1;
+import gamer.Sphere2;
+import gamer.Sphere3;
 import gamer.InfoCenter;
 import gamer.Proto;
-import gamer.Objetivo;
-import gamer.EsferaAtual;
+import gamer.Goal;
+import gamer.CurrentSphere;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -91,27 +91,27 @@ public class Game extends BasicGameState {
                         items.add(new Star(i * 50, j * 50));
                         
                         if(world.getTileProperty(tileId, "index", "null").equalsIgnoreCase("1")){
-                            Esfera1.x = i+1;
-                            Esfera1.y = j+1;
+                            Sphere1.x = i+1;
+                            Sphere1.y = j+1;
                         } else if(world.getTileProperty(tileId, "index", "null").equalsIgnoreCase("2")){
-                            Esfera2.x = i+1;
-                            Esfera2.y = j+1;
+                            Sphere2.x = i+1;
+                            Sphere2.y = j+1;
                         } else if(world.getTileProperty(tileId, "index", "null").equalsIgnoreCase("3")){
-                            Esfera3.x = i+1;
-                            Esfera3.y = j+1;
+                            Sphere3.x = i+1;
+                            Sphere3.y = j+1;
                         }
 
                         //----- Inicializar proxima esfera para gamer
-                        EsferaAtual.x = Esfera1.x;
-                        EsferaAtual.y = Esfera1.y;
+                        CurrentSphere.x = Sphere1.x;
+                        CurrentSphere.y = Sphere1.y;
                         
                     }
                     if (world.getTileProperty(tileId, "name", "null").equalsIgnoreCase("objective")
                             && world.getTileProperty(tileId, "type", "null").equalsIgnoreCase("item")) {
 
                         items.add(new Objective(i * 50, j * 50));
-                        Objetivo.x = i + 1;
-                        Objetivo.y = j + 1;
+                        Goal.x = i + 1;
+                        Goal.y = j + 1;
                         
                         objectiveX = i + 1;
                         objectiveY = j + 1;
@@ -208,21 +208,21 @@ public class Game extends BasicGameState {
     public void initCamadaGamer() {
         InfoCenter.carregaMapa();
         InfoCenter.zeraRobotActions();
-        Proto.setarSentidoParaDireita();
+        Proto.setDirectionToRight();
         
         try { // realizar importações do shell eval
             bsh.eval("import gamer.Proto;");
-            bsh.eval("import gamer.Objetivo;");
-            bsh.eval("import gamer.Esfera1;");
-            bsh.eval("import gamer.Esfera2;");
-            bsh.eval("import gamer.Esfera3;");
-            bsh.eval("import gamer.EsferaAtual;");
-            bsh.set("nada", InfoCenter.map_nada);
-            bsh.set("solido", InfoCenter.map_solido);
-            bsh.set("escada", InfoCenter.map_escada);
-            bsh.set("objetivo", InfoCenter.map_objetivo);
-            bsh.set("esfera", InfoCenter.map_esfera);
-            bsh.set("solido_escada", InfoCenter.map_solidoEscada);
+            bsh.eval("import gamer.Goal;");
+            bsh.eval("import gamer.Sphere1;");
+            bsh.eval("import gamer.Sphere2;");
+            bsh.eval("import gamer.Sphere3;");
+            bsh.eval("import gamer.CurrentSphere;");
+            bsh.set("none", InfoCenter.map_nada);
+            bsh.set("solid", InfoCenter.map_solido);
+            bsh.set("stairs", InfoCenter.map_escada);
+            bsh.set("goal", InfoCenter.map_objetivo);
+            bsh.set("sphere", InfoCenter.map_esfera);
+            bsh.set("solid_stairs", InfoCenter.map_solidoEscada);
             
             VariavelTableNode aux;
             for (int i = 0; i < Universal.currentVariables.size(); i++) {
