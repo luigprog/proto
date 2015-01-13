@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="50" tileheight="50">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="50" tileheight="50">
  <tileset firstgid="1" name="spritesheet_tipo2" tilewidth="50" tileheight="50">
   <properties>
    <property name="name" value="ground"/>
@@ -527,7 +527,7 @@
  </tileset>
  <layer name="invisible" width="20" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBg4ID+AdqMDBSS24kA5gkKgNNAOQALKA+0AKgEAJBcApg==
+   eJxjYBg+QJ5IdQoE5BUpdMdAAaWBdgASUB5oB1AJAAAc5wCm
   </data>
  </layer>
  <layer name="back" width="20" height="10" opacity="0.92">
@@ -542,7 +542,7 @@
  </layer>
  <layer name="main" width="20" height="10">
   <data encoding="base64" compression="zlib">
-   eJzVkdEKgCAMRd23lysLg7IP9goOZS+tfGpwHpTDAR2TcwFsYGT22lkGO3qsvRPeZXCtvQTvNrgMZwIzOICvZw1Tc8Uv49WdeGUfkdq/PiH7W7uGIG+OH3bzx17/z2/RnQwaXjBJ
+   eJxrY2Rg6ATiLiCmBHRDzWmn0Bx0MFDmtQLVtRChtg2ophmqto8Roq8ZC25jRKhtRjK7FU0Mpg4UH72MiHAlhGHx14FkBgzD/NxLRlgORfOQw5lUjG4OADEXLwY=
   </data>
  </layer>
 </map>

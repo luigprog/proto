@@ -3,6 +3,7 @@ package gamer;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import org.newdawn.slick.tiled.TiledMap;
 import util.Universal;
 
 public class InfoCenter {
@@ -65,9 +66,40 @@ public class InfoCenter {
         } catch(IOException e){
             
         }
+    }
+    
+    public static void carregaMapa(TiledMap world) {
+        int tileId;
         
-        //printMap();
-
+        for (int i = 0; i < world.getWidth(); i++) {
+            for (int j = 0; j < world.getHeight(); j++) {
+                tileId = world.getTileId(i, j, world.getLayerIndex("main"));
+                
+                if(world.getTileProperty(tileId, "type", "null").equalsIgnoreCase("solid") &&
+                   world.getTileProperty(tileId, "name", "null").equalsIgnoreCase("ground")     ){
+                    //
+                    map[i][j] = 1;
+                }
+                
+                else if(world.getTileProperty(tileId, "type", "null").equalsIgnoreCase("nonsolid") &&
+                   world.getTileProperty(tileId, "name", "null").equalsIgnoreCase("stairs")     ){
+                    //
+                    map[i][j] = 2;
+                }
+                
+                else if(world.getTileProperty(tileId, "type", "null").equalsIgnoreCase("solid") &&
+                   world.getTileProperty(tileId, "name", "null").equalsIgnoreCase("stairsGround")     ){
+                    //
+                    map[i][j] = 5;
+                }
+                
+                else {
+                    //
+                    map[i][j] = 0;
+                }
+            }
+        }
+        
     }
     
     public static void printMap(){

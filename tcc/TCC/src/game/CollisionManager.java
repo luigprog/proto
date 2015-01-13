@@ -66,11 +66,8 @@ public class CollisionManager {
                    world.getTileProperty(tileId, "name", "null").equalsIgnoreCase("stairsGround")     ){
                     objects.add(new GameObject(GameObject.TYPE_SOLID, GameObject.NAME_STAIRS_AND_GROUND,
                                 i * 50, j * 50, new Rectangle(i * 50, j * 50, 50, 50)));
-                    
                 }
-                
             }
-            
         }
     }
     

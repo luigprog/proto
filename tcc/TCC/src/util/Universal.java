@@ -9,7 +9,7 @@ public class Universal {
     public static String plataforma = "Windows";
     
     public static String playerFolderPath = System.getProperty("user.home") + java.io.File.separator + "tcc";
-    public static int quantidadeFases = 7;
+    public static int quantidadeFases = 6;
     
     public static int currentFaseId;
     public static String currentCode;

@@ -107,7 +107,12 @@ public class Proto {
     
     public static int globalScan(int x, int y){
         if(x>0 && y > 0 && x <= 20 && y <= 10){
-            return InfoCenter.map[x-1][y-1];
+            if((x == Sphere1.x && y == Sphere1.y) || (x == Sphere2.x && y == Sphere2.y) || (x == Sphere3.x && y == Sphere3.y))
+                return InfoCenter.map_esfera;
+            else if (x == Goal.x && y == Goal.y)
+                 return InfoCenter.map_objetivo;
+            else
+                return InfoCenter.map[x-1][y-1];
         } else {
             return 0;
         }

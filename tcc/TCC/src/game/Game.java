@@ -206,7 +206,7 @@ public class Game extends BasicGameState {
     }
 
     public void initCamadaGamer() {
-        InfoCenter.carregaMapa();
+        InfoCenter.carregaMapa(world);
         InfoCenter.zeraRobotActions();
         Proto.setDirectionToRight();
         
