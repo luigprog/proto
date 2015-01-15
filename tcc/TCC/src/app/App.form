@@ -357,6 +357,8 @@
                                       <Component id="buttonAbrir_Fase" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="buttonSalvar_Fase" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jButtonDocumentation" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="scrollPaneCodeEditor" min="-2" pref="677" max="-2" attributes="0"/>
                               </Group>
@@ -422,6 +424,7 @@
                                               <Group type="103" groupAlignment="3" attributes="0">
                                                   <Component id="buttonAbrir_Fase" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="buttonSalvar_Fase" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jButtonDocumentation" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Component id="buttonExecutar_Fase" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
                                           </Group>
@@ -671,6 +674,20 @@
                   <Image iconType="3" name="/data/storage/level/fase1.png"/>
                 </Property>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonDocumentation">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/app/images/helpinfo.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Documentation"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonDocumentationActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

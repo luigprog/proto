@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="50" tileheight="50">
+ <tileset firstgid="1" name="spritesheet_tipo2" tilewidth="50" tileheight="50">
+  <properties>
+   <property name="name" value="ground"/>
+   <property name="type" value="solid"/>
+  </properties>
+  <image source="../../tilesets/tipo2/spritesheet.png" width="500" height="150"/>
+  <tile id="1">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="31" name="spritesheet_gizmos" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/gizmos/spritesheet.png" width="250" height="50"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="start"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="name" value="objective"/>
+    <property name="type" value="item"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="index" value="1"/>
+    <property name="name" value="star"/>
+    <property name="type" value="item"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="index" value="2"/>
+    <property name="name" value="star"/>
+    <property name="type" value="item"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="index" value="3"/>
+    <property name="name" value="star"/>
+    <property name="type" value="item"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="36" name="spritesheet_tipo3" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo3/spritesheet.png" width="500" height="150"/>
+  <tile id="3">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="66" name="spritesheet_tipo4" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo4/spritesheet.png" width="500" height="150"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="96" name="spritesheet_tipo5" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo5/spritesheet.png" width="500" height="150"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="126" name="fundo_tipo5" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo5/fundo.png" width="1000" height="500"/>
+ </tileset>
+ <tileset firstgid="326" name="tronco1_tipo5" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo5/tronco1.png" width="150" height="500"/>
+ </tileset>
+ <tileset firstgid="356" name="tronco2_tipo5" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo5/tronco2.png" width="150" height="500"/>
+ </tileset>
+ <tileset firstgid="386" name="sobras_tipo5" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo5/sobra.png" width="50" height="50"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="387" name="spritesheet_tipo1" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo1/spritesheet.png" width="500" height="100"/>
+  <tile id="0">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="name" value="stairs"/>
+    <property name="type" value="nonsolid"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="name" value="stairsGround"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="name" value="ground"/>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="407" name="fundo_tipo1" tilewidth="50" tileheight="50">
+  <image source="../../tilesets/tipo1/fundo.png" width="1000" height="500"/>
+ </tileset>
+ <layer name="invisible" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg+QJ5IdQoE5BUpdMdAAaWBdgASUB5oB1AJAAAc5wCm
+  </data>
+ </layer>
+ <layer name="back" width="20" height="10" opacity="0.92">
+  <data encoding="base64" compression="zlib">
+   eJwNwwdXiAEAAMCv7BFlZVRINmWF7L33JvpbVkYZpRSyySgrJJsyMotIpZDM7t67rSFBsM3t7nCnqe5yt3vca5rp7nO/BzxohpkeMstsD5tjrkc86jHzPO4JT3rK057xrOc8b74XvOglL1tgoVe86jWve8Mib3rL2xZ7xxLves/7PvChj3zsE59aapnPfO4LX1ruK1/7xre+870VVvrBj1b5yc9W+8Uaa63zq/U2+M3v/rDRnzb5y9/+8a///G8QGgQhhtrClraytW1sazvb28GOhtnJzoYbYRe72s3u9jDSnvayt32MMtoY+9rP/sY6wDgHOsjBDnGowxzuCEcab4KjHO0YxzrORMc7wYkmOcnJTnGq05zuDGc6y9nOca7znO8CF7rIxS5xqctc7gpXusrVrnGt61zvBje6yWQ3u8UUmwHvBWXc
+  </data>
+ </layer>
+ <layer name="meio" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAfpDFSoHkUjIIhAAAs6gBo
+  </data>
+ </layer>
+ <layer name="main" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxrY2Rg6ATiLiCmBHRDzWmn0Bx0MFDmtQLVtRChtg2ophmqto8Roq8ZC25jRKhtRjK7FU0Mpg4UH72MiHAlhGHx14FkBgzD/NxLRlgORfOQw5lUjG4OADEXLwY=
+  </data>
+ </layer>
+</map>

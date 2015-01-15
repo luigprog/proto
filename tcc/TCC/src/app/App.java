@@ -9,6 +9,7 @@ import bsh.TargetError;
 import data.storage.PlayerStats;
 import data.storage.level.FasesDados;
 import gamer.InfoCenter;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -151,6 +152,7 @@ public class App extends javax.swing.JFrame {
             labelText_Fase = new javax.swing.JTextArea();
             jLabel7 = new javax.swing.JLabel();
             imagemGradeFase_Fase = new javax.swing.JLabel();
+            jButtonDocumentation = new javax.swing.JButton();
             panelSplash = new javax.swing.JPanel();
             jLabel6 = new javax.swing.JLabel();
             panelHistoria = new javax.swing.JPanel();
@@ -456,6 +458,15 @@ public class App extends javax.swing.JFrame {
 
             imagemGradeFase_Fase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/data/storage/level/fase1.png"))); // NOI18N
 
+            jButtonDocumentation.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/helpinfo.png"))); // NOI18N
+            jButtonDocumentation.setText("Documentation");
+            jButtonDocumentation.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+            jButtonDocumentation.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jButtonDocumentationActionPerformed(evt);
+                }
+            });
+
             javax.swing.GroupLayout panelFaseLayout = new javax.swing.GroupLayout(panelFase);
             panelFase.setLayout(panelFaseLayout);
             panelFaseLayout.setHorizontalGroup(
@@ -470,7 +481,9 @@ public class App extends javax.swing.JFrame {
                                     .addGap(18, 18, 18)
                                     .addComponent(buttonAbrir_Fase)
                                     .addGap(18, 18, 18)
-                                    .addComponent(buttonSalvar_Fase))
+                                    .addComponent(buttonSalvar_Fase)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButtonDocumentation))
                                 .addComponent(scrollPaneCodeEditor, javax.swing.GroupLayout.PREFERRED_SIZE, 677, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(18, 18, 18)
                             .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -520,7 +533,8 @@ public class App extends javax.swing.JFrame {
                                         .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(panelFaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(buttonAbrir_Fase)
-                                                .addComponent(buttonSalvar_Fase))
+                                                .addComponent(buttonSalvar_Fase)
+                                                .addComponent(jButtonDocumentation))
                                             .addComponent(buttonExecutar_Fase, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(16, 16, 16)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFaseLayout.createSequentialGroup()
@@ -1065,6 +1079,14 @@ public class App extends javax.swing.JFrame {
          showPanel(panelMenuPrincipal);
     }//GEN-LAST:event_buttonVoltar_CreditosActionPerformed
 
+    private void jButtonDocumentationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDocumentationActionPerformed
+        try {
+            File htmlFile = new File("gamerjavadoc/index.html");
+            Desktop.getDesktop().browse(htmlFile.toURI());
+        } catch (Exception e) {
+        }
+    }//GEN-LAST:event_jButtonDocumentationActionPerformed
+
     public void faseSelecionada(int id) {
         Universal.currentFaseId = id;
         showPanel(panelFase);
@@ -1089,6 +1111,7 @@ public class App extends javax.swing.JFrame {
     private javax.swing.JButton buttonVoltar_MenuFases;
     private javax.swing.JTextPane codeEditor;
     private javax.swing.JLabel imagemGradeFase_Fase;
+    private javax.swing.JButton jButtonDocumentation;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
