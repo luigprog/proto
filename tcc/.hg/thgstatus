@@ -1,3 +1,4 @@
+rTCC/Luigi Garcia - codes
 mTCC/assets/game/fases/fase5
 mTCC/assets/game/fases/fase6
 mTCC/assets/game/popups
@@ -13,7 +14,7 @@ rTCC/build/classes/gamer
 rTCC/build/classes/test
 mTCC/build/classes/util
 mTCC/dist
-mTCC/nbproject/private
+rTCC/doc
 mTCC/src/app
 mTCC/src/app/images
 mTCC/src/data/storage/level
